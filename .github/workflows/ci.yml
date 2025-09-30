@@ -1,5 +1,4 @@
 name: CI
-
 on:
   push:
   pull_request:
@@ -7,10 +6,12 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    env:
+      PYTHONPATH: GitHubApi567-hw4a
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - run: pip install -r requirements.txt
-      - run: python -m unittest discover -s tests -p "test*.py" -v
+      - run: pip install -r GitHubApi567-hw4a/requirements.txt
+      - run: python -m unittest discover -s GitHubApi567-hw4a/tests -p "test*.py" -v
