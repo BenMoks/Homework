@@ -1,6 +1,6 @@
 # GitHubApi567-hw4a (Mocked Version)
 
-![CI](https://github.com/BenMoks/Homework/actions/workflows/ci.yml/badge.svg?branch=HW03a_Mocking)
+[![CI](https://github.com/BenMoks/Homework/actions/workflows/ci.yml/badge.svg?branch=HW03a_Mocking)](https://github.com/BenMoks/Homework/actions/workflows/ci.yml)
 
 This branch (**HW03a_Mocking**) uses `unittest.mock` to replace all real GitHub API calls.  
 The tests run consistently without hitting the live GitHub API or being affected by rate limits.
